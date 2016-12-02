@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WorldWideWeather</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="min_temp">Temp Min: %1$s ℃</string>
+    <string name="max_temp">Temp Max: %1$s ℃</string>
+    <string name="wind_speed">Wind Speed: %1$s km/h</string>
+    <string name="humidity">Humidity: %1$s%%</string>
+    <string name="sunrise">Sunrise: %1$s</string>
+    <string name="sunset">Sunset: %1$s</string>
+    <string name="celcius">ºC</string>
+    <string name="city_country">in %1$s, %2$s</string>
+</resources>

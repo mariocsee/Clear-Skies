@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvTempMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/min_temp"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tvTempMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/max_temp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/wind_speed"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvHumid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/humidity"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvSunrise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/sunrise"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvSunset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/sunset"
+        android:textSize="22sp" />
+
+</LinearLayout>
