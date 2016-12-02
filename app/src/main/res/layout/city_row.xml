@@ -11,12 +11,6 @@
         android:gravity="center"
         android:weightSum="4">
 
-        <!--<ImageView-->
-            <!--android:id="@+id/ivWeatherIconRow"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:layout_height="80dp" />-->
-
         <LinearLayout
             android:layout_marginStart="10dp"
             android:layout_width="0dp"
@@ -24,37 +18,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--<TextView-->
-                <!--android:id="@+id/tvTimeRow"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:textSize="18sp"-->
-                <!--android:text="4:20pm"/>-->
-
             <TextView
                 android:id="@+id/tvCityRow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="Mile High City"/>
-
-            <!--<TextView-->
-                <!--android:id="@+id/tvWeatherRow"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:textSize="18sp"-->
-                <!--android:text="Cloudy"/>-->
+                android:text=""/>
 
         </LinearLayout>
-
-        <!--<TextView-->
-            <!--android:id="@+id/tvTemperatureRow"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="1"-->
-            <!--android:textSize="30sp"-->
-            <!--android:text="420ºF"-->
-            <!--/>-->
 
 
         <Button
@@ -63,23 +34,9 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:text="X"/>
+            android:text="@string/del"/>
 
     </LinearLayout>
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:gravity="center">-->
-
-        <!--<Button-->
-            <!--android:id="@+id/btnDeleteCity"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="12sp"-->
-            <!--android:text="Delete"/>-->
-
-    <!--</LinearLayout>-->
 
 </LinearLayout>

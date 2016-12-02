@@ -7,6 +7,6 @@
         android:id="@+id/etCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="City Name"/>
+        android:hint="@string/city_name_hint"/>
 
 </LinearLayout>

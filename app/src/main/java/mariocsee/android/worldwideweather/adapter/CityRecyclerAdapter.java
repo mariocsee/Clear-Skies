@@ -28,11 +28,7 @@ public class CityRecyclerAdapter extends
         implements CityTouchHelperAdapter {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView ivWeatherIcon;
         private TextView tvCity;
-        private TextView tvTemperature;
-        private TextView tvWeather;
-        private TextView tvTime;
         private Button btnDeleteCity;
 
         public ViewHolder(View itemView) {

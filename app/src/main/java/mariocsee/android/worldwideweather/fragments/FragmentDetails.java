@@ -26,6 +26,7 @@ import retrofit2.Response;
 
 public class FragmentDetails extends Fragment {
 
+    public static final String TAG_API = "TAG_API";
     private TextView tvDate;
     private TextView tvTempMin;
     private TextView tvTempMax;
@@ -93,7 +94,7 @@ public class FragmentDetails extends Fragment {
             public void onFailure(Call<WeatherResult> call, Throwable t) {
                 Toast.makeText(getContext(), "City not recognized",
                         Toast.LENGTH_SHORT).show();
-                Log.d("TAG_API", t.toString());
+                Log.d(TAG_API, t.toString());
             }
         });
     }

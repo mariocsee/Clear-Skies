@@ -150,14 +150,14 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void showAddCityDialog() {
-        AddCityFragment messageFragment = new AddCityFragment();
-        messageFragment.setCancelable(false);
+        AddCityFragment addCityFragment = new AddCityFragment();
+        addCityFragment.setCancelable(false);
 
         Bundle bundle = new Bundle();
         bundle.putString(KEY_MSG,"You have opened the add city dialog");
-        messageFragment.setArguments(bundle);
+        addCityFragment.setArguments(bundle);
 
-        messageFragment.show(getSupportFragmentManager(),
+        addCityFragment.show(getSupportFragmentManager(),
                 "AddCityFragment");
     }
 

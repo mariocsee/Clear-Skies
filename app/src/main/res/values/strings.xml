@@ -13,4 +13,8 @@
     <string name="sunset">Sunset: %1$s</string>
     <string name="celcius">ºC</string>
     <string name="city_country">in %1$s, %2$s</string>
+    <string name="del">Del</string>
+    <string name="city_name_hint">City Name</string>
+    <string name="add_city">Add City</string>
+    <string name="about">About</string>
 </resources>
