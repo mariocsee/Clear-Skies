@@ -26,12 +26,13 @@ public class ViewWeatherActivity extends AppCompatActivity {
     private PagerAdapter wPagerAdapter;
     private String cityName;
     public Call<WeatherResult> weatherCall;
-    public String apiid = "9353f19bd883de927bf3dfdc5c141178";
+    public String apiid;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_weather);
+        apiid = getString(R.string.api_key);
 
         wPager = (ViewPager) findViewById(R.id.pagerWeather);
         wPagerAdapter = new WeatherPagerAdapter(getSupportFragmentManager());
@@ -44,9 +45,9 @@ public class ViewWeatherActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         WeatherApi weatherApi = retrofit.create(WeatherApi.class);
-        String cityQuery = cityName.replaceAll(" ", "");
-        Log.d("TAG_API", "Querying with city name: " + cityQuery);
-        weatherCall = weatherApi.getCityWeather(cityQuery, "metric", apiid);
+//        String cityQuery = cityName.replaceAll(" ", "");
+        Log.d("TAG_API", "Querying with city name: " + cityName);
+        weatherCall = weatherApi.getCityWeather(cityName, "metric", apiid);
 
         setUpToolBar();
     }

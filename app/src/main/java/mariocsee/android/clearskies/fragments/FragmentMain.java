@@ -56,7 +56,11 @@ public class FragmentMain extends Fragment {
         weatherResult.clone().enqueue(new Callback<WeatherResult>() {
             @Override
             public void onResponse(Call<WeatherResult> call, Response<WeatherResult> response) {
-                String idIcon = response.body().getWeather().get(0).getIcon();
+                String idIcon = response
+                        .body()
+                        .getWeather()
+                        .get(0)
+                        .getIcon();
                 String url = "http://openweathermap.org/img/w/" + idIcon + ".png";
                 Glide.with(getActivity()).load(url).into(ivWeatherIcon);
 

@@ -9,7 +9,6 @@ import java.io.Serializable;
  */
 
 public class City extends SugarRecord implements Serializable {
-
     private String cityName;
 
     public City() {

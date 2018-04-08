@@ -18,7 +18,6 @@ import mariocsee.android.clearskies.ViewWeatherActivity;
 import mariocsee.android.clearskies.data.City;
 import mariocsee.android.clearskies.touch.CityTouchHelperAdapter;
 
-
 /**
  * Created by mariocsee on 11/29/16.
  */

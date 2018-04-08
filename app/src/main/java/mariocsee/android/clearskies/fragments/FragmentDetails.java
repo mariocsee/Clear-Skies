@@ -67,7 +67,10 @@ public class FragmentDetails extends Fragment {
         weatherResult.clone().enqueue(new Callback<WeatherResult>() {
             @Override
             public void onResponse(Call<WeatherResult> call, Response<WeatherResult> response) {
-                String tempMin = (response.body().getMain().getTempMin()).toString();
+                String tempMin = (response.body()
+                        .getMain()
+                        .getTempMin())
+                        .toString();
                 tvTempMin.setText(getString(R.string.min_temp, tempMin));
 
                 String tempMax = (response.body().getMain().getTempMax()).toString();

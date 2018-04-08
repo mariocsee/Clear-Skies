@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
     }
 
@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity
                 new LinearLayoutManager(this);
         recyclerCity.setLayoutManager(mLayoutManager);
 
-        List<City> citiesList = City.listAll(City.class);
+        List<City> citiesList;
+        citiesList = City.listAll(City.class);
         cityRecyclerAdapter = new CityRecyclerAdapter(citiesList, this);
 
         ItemTouchHelper.Callback callback = new CityTouchHelperCallback(cityRecyclerAdapter);
@@ -180,7 +181,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void saveCity(City city) {
-            cityRecyclerAdapter.addCity(city);
+        cityRecyclerAdapter.addCity(city);
     }
 
 }
