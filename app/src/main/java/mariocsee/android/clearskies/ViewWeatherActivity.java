@@ -46,9 +46,9 @@ public class ViewWeatherActivity extends AppCompatActivity {
                 .build();
         WeatherApi weatherApi = retrofit.create(WeatherApi.class);
 //        String cityQuery = cityName.replaceAll(" ", "");
-        Log.d("TAG_API", "Querying with city name: " + cityName);
+        Log.d("TAG_API", "Querying with city na" +
+                "me: " + cityName);
         weatherCall = weatherApi.getCityWeather(cityName, "metric", apiid);
-
         setUpToolBar();
     }
 

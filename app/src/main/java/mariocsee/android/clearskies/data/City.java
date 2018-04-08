@@ -17,7 +17,6 @@ public class City extends SugarRecord implements Serializable {
 
     public City(String cityName) {
         this.cityName = cityName;
-
     }
 
     public String getCityName() {

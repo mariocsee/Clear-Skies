@@ -6,6 +6,5 @@ package mariocsee.android.clearskies.fragments;
 
 public interface OnAddCityAnswer {
     public void onPositiveSelected();
-
     public void onNegativeSelected();
 }

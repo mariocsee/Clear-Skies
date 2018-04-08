@@ -67,10 +67,7 @@ public class FragmentDetails extends Fragment {
         weatherResult.clone().enqueue(new Callback<WeatherResult>() {
             @Override
             public void onResponse(Call<WeatherResult> call, Response<WeatherResult> response) {
-                String tempMin = (response.body()
-                        .getMain()
-                        .getTempMin())
-                        .toString();
+                String tempMin = (response.body().getMain().getTempMin()).toString();
                 tvTempMin.setText(getString(R.string.min_temp, tempMin));
 
                 String tempMax = (response.body().getMain().getTempMax()).toString();
@@ -95,9 +92,9 @@ public class FragmentDetails extends Fragment {
 
             @Override
             public void onFailure(Call<WeatherResult> call, Throwable t) {
-                Toast.makeText(getContext(), "City not recognized",
-                        Toast.LENGTH_SHORT).show();
-                Log.d(TAG_API, t.toString());
+                Log.d(TAG_API, "ON FAILURE" + t.toString());
+//                Toast.makeText(getContext(), "City not recognized",
+//                        Toast.LENGTH_SHORT).show();
             }
         });
     }

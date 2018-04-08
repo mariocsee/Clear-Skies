@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity
     public static final int REQUEST_NEW_WEATHER = 101;
     private CityRecyclerAdapter cityRecyclerAdapter;
     private RecyclerView recyclerCity;
-    private EditText etCity;
+    private AutoCompleteTextView autocompleteCity;
 
     private CityRecyclerAdapter cityAdapter;
 
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_about) {
-            Toast.makeText(this, "WorldWideWeather was made by Mario See for AIT's Mobile Software Development course", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Clear Skies was made by Mario See for AIT Mobile Software Development course", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_add_city) {
             showAddCityDialog();
         }

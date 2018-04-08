@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.bumptech.glide.Glide;
 
 import mariocsee.android.clearskies.R;
@@ -56,11 +55,7 @@ public class FragmentMain extends Fragment {
         weatherResult.clone().enqueue(new Callback<WeatherResult>() {
             @Override
             public void onResponse(Call<WeatherResult> call, Response<WeatherResult> response) {
-                String idIcon = response
-                        .body()
-                        .getWeather()
-                        .get(0)
-                        .getIcon();
+                String idIcon = response.body().getWeather().get(0).getIcon();
                 String url = "http://openweathermap.org/img/w/" + idIcon + ".png";
                 Glide.with(getActivity()).load(url).into(ivWeatherIcon);
 
@@ -78,9 +73,9 @@ public class FragmentMain extends Fragment {
 
             @Override
             public void onFailure(Call<WeatherResult> call, Throwable t) {
-                Toast.makeText(getContext(), "City not recognized",
-                        Toast.LENGTH_SHORT).show();
-                Log.d(TAG_API, t.toString());
+                Log.d(TAG_API, "ON FAILURE" + t.toString());
+//                Toast.makeText(getActivity().getBaseContext(), "City not recognized",
+//                        Toast.LENGTH_SHORT).show();
             }
         });
     }

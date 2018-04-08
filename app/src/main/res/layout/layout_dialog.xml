@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/etCity"
+    <!--<EditText-->
+        <!--android:id="@+id/etCity"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/city_name_hint"-->
+        <!--android:inputType="text|textAutoCorrect"-->
+        <!--/>-->
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/city_name_hint"/>
+        android:hint="@string/city_name_hint"
+        android:inputType="text|textAutoCorrect"
+        />
 
 </LinearLayout>
