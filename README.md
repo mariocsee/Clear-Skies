@@ -1,5 +1,5 @@
-# WorldWideWeather
-This is a simple weather Android application developed on Android Studio for the Mobile Software Development class taught by Professor Peter Ekler at Aquincum Institute of Technology Budapest in Fall 2016.
+# Clear Skies
+This is a simple weather Android application developed on Android Studio for the Mobile Software Development class taught by Professor Peter Ekler at Aquincum Institute of Technology Budapest in Fall 2016. 
 
 ### Features 
 - Adding cities to a RecyclerView using a DialogFragment.
@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Download and install [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). During installation, the wizard may ask to install JRE (Java Runtime Environment)——accept.
 * Download and install [Android Studio](https://developer.android.com/studio/index.html).
-* Configure SDKs and download Android 25 on Android Studio.
+* Configure SDKs and download Android 27 on Android Studio.
 * Create an Android Virtual Device to run full Android OS and test the application.
 
 ### Installing
@@ -47,5 +47,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+* Android
+* Material Design
 * Aquincum Institute of Technology and Budapest University of Technology and Economics in Budapest, Hungary
 * Professor Peter Ekler
